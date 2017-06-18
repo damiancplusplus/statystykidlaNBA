@@ -1,12 +1,7 @@
 #include "sort.hpp"
-#include <gtest/gtest.h>
+#include "menu.hpp"
+#include "gtest/gtest.h"
 
-// Test enum
-TEST(FactorialTest, TestEnum) {
-  EXPECT_EQ(1, Factorial(Blok));
-  EXPECT_EQ(2, Factorial(za2));
-  EXPECT_EQ(3, Factorial(za3));
-}
 
 TEST(FactorialTest, TestCountPoints)
 {
@@ -26,13 +21,29 @@ TEST(FactorialTest, TestCountPoints)
 
 TEST(FactorialTest, TestCountPlayerPoints)
 {
-	zawodnik player;
+    zawodnik player;
+player.nr=9;
+    player.za1_celny =1;
+    player.za1_niecelny=0;
+    player.za1_p=0;
+    player.za2_celny=1;
+    player.za2_niecelny=0;
+    player.za2_p=0;
+    player.za3_celny=1;
+    player.za3_niecelny=0;
+    player.za3_p=0;
+    player.zbiorka_atak=0;
+    player.zbiorka_obrona=0;
+    player.asysta=0;
+    player.faul_atak=0;
+    player.faul_obrona=0;
+    player.strata=0;
+    player.przechwyt=0;
+    player.eval=0;
+    player.punkty=0;
+   
 	
-	player.za1_celny +=1;
-	player.za2_celny +=1;
-	player.za3_celny +=1;
-	
-	EXPECT_EQ(6, player.licz_punkty());
+    EXPECT_EQ(6, player.licz_punkty());
 	
 }
 
@@ -41,4 +52,3 @@ int main(int argc, char **argv)
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
-</gtest>

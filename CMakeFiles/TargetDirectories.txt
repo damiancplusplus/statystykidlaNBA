@@ -1,0 +1,5 @@
+/home/d/ks/statystykidlanba/CMakeFiles/test.dir
+/home/d/ks/statystykidlanba/CMakeFiles/main.dir
+/home/d/ks/statystykidlanba/CMakeFiles/edit_cache.dir
+/home/d/ks/statystykidlanba/CMakeFiles/runTests.dir
+/home/d/ks/statystykidlanba/CMakeFiles/rebuild_cache.dir

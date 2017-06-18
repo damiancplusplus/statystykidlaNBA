@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/d/ks/statystykidlanba/menu.hpp
+iostream
+-
+string
+-
+fstream
+-
+cstdlib
+-
+stdio.h
+-
+
+/home/d/ks/statystykidlanba/sort.hpp
+vector
+-
+algorithm
+-
+
+/home/d/ks/statystykidlanba/test.cpp
+sort.hpp
+/home/d/ks/statystykidlanba/sort.hpp
+menu.hpp
+/home/d/ks/statystykidlanba/menu.hpp
+gtest/gtest.h
+/home/d/ks/statystykidlanba/gtest/gtest.h
+

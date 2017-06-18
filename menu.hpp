@@ -5,7 +5,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <stdio.h>
-#include <conio.h>
+
 
 using namespace std;
 enum wydarzenie {za1_celny, za1_niecelny, za2_celny, za2_niecelny, za3_celny, za3_niecelny, zbiorka_atak,

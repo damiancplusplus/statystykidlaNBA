@@ -11,25 +11,25 @@ int liczPunkty();
 //pojedynczyk zawodnik
 struct zawodnik
     {
-    int nr = 0;
-    int za1_celny = 0;
-    int za1_niecelny = 0;
-    float za1_p = 0;
-    int za2_celny = 0;
-    int za2_niecelny = 0;
-    float za2_p = 0;
-    int za3_celny = 0;
-    int za3_niecelny = 0;
-    float za3_p = 0;
-    int zbiorka_atak = 0;
-    int zbiorka_obrona = 0;
-    int asysta = 0;
-    int faul_atak = 0;
-    int faul_obrona = 0;
-    int strata = 0;
-    int przechwyt = 0;
-    int eval = 0;
-    int punkty = 0;
+    int nr;
+    int za1_celny;
+    int za1_niecelny;
+    float za1_p;
+    int za2_celny;
+    int za2_niecelny;
+    float za2_p;
+    int za3_celny;
+    int za3_niecelny;
+    float za3_p;
+    int zbiorka_atak;
+    int zbiorka_obrona;
+    int asysta;
+    int faul_atak;
+    int faul_obrona;
+    int strata;
+    int przechwyt;
+    int eval;
+    int punkty;
 
     public:
     void licz_eval()
@@ -39,10 +39,11 @@ struct zawodnik
         eval = suma;
     }
 
-    void licz_punkty()
+    int licz_punkty()
     {
         int suma = (za1_celny + (za2_celny*2) + (za3_celny*3));
         punkty = suma;
+        return suma;
     }
 
     void liczp_za1()
@@ -118,17 +119,19 @@ enum sort_value actual_sort_value = za3p;
 struct druzyna
     {
     std::vector<zawodnik>zawodnicy;
-    int suma_punktow = 0;
+    int suma_punktow =0;
 
     public:
 
-        void licz_punkty_druzyny()
+        int licz_punkty_druzyny()
         {
             suma_punktow = 0;
             for(int p=0; p<zawodnicy.size(); p++)
                 {
                 suma_punktow = suma_punktow + zawodnicy[p].punkty;
                 }
+            return suma_punktow;
+
         }
 
           void sortuj_eval()

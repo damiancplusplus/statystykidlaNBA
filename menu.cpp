@@ -55,13 +55,13 @@ for(;;){
     cout << endl;
     showstats();
     cout << endl;
-    wybor=getch();
+    wybor=getchar();
     switch(wybor)
     {
     case '1':
         cout << "1 - celny/niecelny - 2" << endl;
         char wybor_za1;
-        wybor_za1=getch();
+        wybor_za1=getchar();
             switch (wybor_za1){
             case '1':
                 Dodaj(za1_celny);
@@ -73,7 +73,7 @@ for(;;){
     case '2':
         cout << "1 - celny/niecelny - 2" << endl;
         char wybor_za2;
-        wybor_za2=getch();
+        wybor_za2=getchar();
             switch (wybor_za2){
             case '1':
                 Dodaj(za2_celny);
@@ -85,7 +85,7 @@ for(;;){
     case '3':
        cout << "1 - celny/niecelny - 2" << endl;
         char wybor_za3;
-        wybor_za3=getch();
+        wybor_za3=getchar();
             switch (wybor_za3){
             case '1':
                 Dodaj(za3_celny);
@@ -97,7 +97,7 @@ for(;;){
     case 'z':
        cout << "1 - atak/obrona - 2" << endl;
         char wybor_zbiorka;
-        wybor_zbiorka=getch();
+        wybor_zbiorka=getchar();
             switch (wybor_zbiorka){
             case '1':
                 Dodaj(zbiorka_atak);
@@ -115,7 +115,7 @@ for(;;){
     case 'f':
        cout << "1 - atak/obrona - 2" << endl;
         char wybor_faul;
-        wybor_faul=getch();
+        wybor_faul=getchar();
             switch (wybor_faul){
             case '1':
                 Dodaj(faul_atak);
